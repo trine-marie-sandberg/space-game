@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-import { Li, Ul } from "./style";
+import { Li, Ul, Navigation } from "./style";
 
 export default function Nav() {
     return(
-        <nav>
+        <Navigation>
             <Ul>
                 <Li>
                     <NavLink to="/"> 
@@ -18,6 +18,6 @@ export default function Nav() {
                     </NavLink>
                 </Li>
             </Ul>
-        </nav>
+        </Navigation>
     )
 }
