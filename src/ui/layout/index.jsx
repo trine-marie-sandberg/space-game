@@ -1,14 +1,16 @@
 import Nav from "../nav";
+import { Header, Main, Grid, Footer } from "./style";
 
 export default function Layout({children}) {
     return(
-        <div>
-            <header>
+        <Grid>
+            <Header>
                 <Nav/>
-            </header>
-            <main>
+            </Header>
+            <Main>
                 {children}
-            </main>
-        </div>
+            </Main>
+            <Footer>© rights reserved, 2024</Footer>
+        </Grid>
     )
 }
