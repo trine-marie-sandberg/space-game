@@ -1,12 +1,15 @@
 import { useState } from "react";
-import { GameScreen } from "./style";
+import { Button, GameScreen } from "./style";
 
 export default function Game() {
-    const [ newgame, setNewgame ] = useState(true);
+    const [ newgame, setNewgame ] = useState(false);
     return(
         <GameScreen>
-            <h1>Game</h1>
-            <button>START</button>
+            {newgame?
+              <div>newgame</div>
+              :
+              <Button onClick={() => setNewgame(true)}>START</Button>
+            }
         </GameScreen>
     )
 }
