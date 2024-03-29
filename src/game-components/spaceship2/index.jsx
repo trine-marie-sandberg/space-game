@@ -1,7 +1,10 @@
+import { Ship2 } from "./style";
+
 export default function SpaceShip2() {
     return(
-        <div>
+        <Ship2>
             SHIP 2
-        </div>
+            <i className="fa-solid fa-shuttle-space"></i>
+        </Ship2>
     )
 }

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const GameScreen = styled.div`
   background-color: black;
-  height: 95%;
+  height: 75vh;
   padding: 10px;
   border-radius: 10px;
   border: 2px solid ${(props) => props.theme.color.green};
@@ -21,6 +21,12 @@ export const QuitBtn = styled.button`
   color: white;
 `;
 
+export const ShipBtn = styled.button`
+  cursor: pointer;
+  background-color: black;
+  border: none;
+`;
+
 export const StartBtn = styled.button`
   margin: 25% auto;
   padding: 10px 15px;
@@ -33,4 +39,9 @@ export const StartBtn = styled.button`
   &:hover {
     border: 2px solid ${(props) => props.theme.color.green};
   }
+`;
+
+export const VsWrapp = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;
