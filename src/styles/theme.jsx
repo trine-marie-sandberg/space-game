@@ -6,6 +6,7 @@ const theme = {
         black: "var(--color-black)",
         grey: "var(--color-grey)",
         blue: "var(--color-blue)",
+        green: "var(--color-green)",
     }
 }
 
